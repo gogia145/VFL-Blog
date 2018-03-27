@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" id="viewport">
+
+  <title>New Design</title>
+
+  <link rel="stylesheet" media="all" href="files/style.css">
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+   <script src="files/sitejquery.js"></script>
+</head>
+<body class="posts posts-index  ">
+
+<div class="layout">
+  <div class="main-sidebar">
+  <div class="logo-wrapper">
+ 
+    <h1 class="logo"><a href="#/"><img src="files/dummylogo.png" style="width:100px;"></a></h1>
+    <button data-action="toggleMenu" class="menu-toggle menu-open-btn">
+      <span class="icon icon-menu"></span>
+    </button>
+    <button data-action="toggleMenu" class="menu-toggle menu-close-btn">
+      <span class="icon icon-cross"></span>
+    </button>
+  </div>
+  <div class="nav nav-pills nav-stacked main-nav">
+    <div class="main-nav-holder">
+            <ul class="nav nav-pills nav-stacked canvas-nav">
+              <li class="">
+                <a href="#" id="sidebar-posts">
+                  <span class="icon icon-list"></span>Posts
+                </a>
+              </li>
+              <li class="">
+                <a href="#" id="sidebar-questions">
+                  <span class="icon icon-question"></span>Questions
+                </a>
+              </li>
+              <li class="">
+                <a href="#" id="sidebar-subscription">
+                  <span class="icon icon-comments"></span>Discussions
+                </a>
+              </li>
+             
+            </ul>
+        
+	  <div class="latest_trends">
+		<a class="twitter-timeline"  href="https://twitter.com/VFLbill" data-widget-id="730694027746500608">Tweets by @VFLbill</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+		
+      </div>
+	  
+	  <div class="bottom">
+  <!--button class="feedback-btn rounded-btn hidden-xs" data-toggle="modal" data-target="#feedback" id="feedback_button">
+    <span class="circle"><span class="icon icon-bullhorn"></span></span>
+    Feedback
+  </button-->
+ <img src="files/follow.png" style="width:30%;"/>
+  <div class="social" style="width: 100%;background:ThreeDDarkShadow;padding:1%;">
+    
+    <a class="link-social" href="https://twitter.com" target="_blank">
+      <span class="icon icon-twitter"></span>
+    </a>
+    <a class="link-social" href="https://www.facebook.com" target="_blank">
+      <span class="icon icon-facebook"></span>
+    </a>
+    <a class="link-social" href="https://www.linkedin.com" target="_blank">
+      <span class="icon icon-linkedin"></span>
+    </a>
+    <a class="link-social" href="http://instagram.com" target="_blank">
+      <span class="icon icon-instagram"></span>
+    </a>
+  </div>
+
+  <ul class="terms-nav normalized-list">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Terms</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li>
+      <div class="dropdown">
+        <a id="terms-drop" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          More
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="terms-drop">
+          <li><a href="#">Built With</a></li>
+          <li><a href="#">Guidelines</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+    </div>
+  </div>
+
+</div>
+  <div data-action="toggleMenu" class="main-sidebar-overlay"></div>
+  <div class="header-wrapper">
+    <div style="right: 17px;" class="header" id="header" data-renew="header" data-renew-target="#header">
+  <h1 class="logo"></h1>
+  <ul class="nav nav-pills pull-left controls-header search-header-controls">
+  <li class="visible-xs">
+    <button data-action="toggleSearch" class="search-btn-mobile circle-btn">
+      <span class="circle"><span class="icon icon-search"></span></span>
+    </button>
+  </li>
+</ul>
+<ul class="nav nav-pills controls-header primary-header-controls">
+      <li>
+        <div><a class="oval-hollow-btn small login" href="#">Log In</a></div>
+      </li>
+      <li>
+        <div><a class="oval-hollow-btn small primary sign-up" href="#">Sign Up</a></div>
+      </li>
+  <li class="hidden-xs">
+    <a class="new-btn rounded-btn" data-remote="true" href="#"><span class="circle"><span class="icon icon-plus"></span></span>New Post</a>
+  </li>
+  <li class="visible-xs">
+    <a class="new-btn-mobile circle-btn" data-remote="true" href="#"><span class="circle"><span class="icon icon-plus"></span></span></a>
+  </li>
+</ul>
+  <div class="search-bar" data_show_hidden_posts="">
+    <form class="search-form search-form-header">
+  <div class="search-field">
+    <input name="q"  autocomplete="off" spellcheck="false" autocorrect="false" placeholder="Search" class="form-control"  type="text">
+  </div>
+  <button type="button" class="search-btn search-btn-submit" disabled="disabled">
+    <span class="icon icon-search"></span>
+  </button>
+  <button data-action="toggleSearch" type="reset" class="close-btn search-close-btn">
+    <span class="icon icon-cross"></span>
+  </button>
+  
+</form>
+
+
+  </div>
+</div>  </div>
+
+  
+  <div class="main-container ">
+        <div class="banner-holder collapse in">
+  <div class="banner" style="background: rgba(92.94%, 91.76%, 86.27%, 1) none repeat scroll 0 0; color: #000;">
+    <button type="button" class="close" id="promo-alert" data-toggle="collapse" data-target=".banner-holder">
+      <span aria-hidden="true">×</span>
+    </button>
+    <div class="img-gradient">
+  <img class="img-gradient-img" src="files/anthony-thomas-512x512.png">
+  <div class="img-gradient-overlay" style="background-image: linear-gradient(to right, rgba(46.27%, 46.67%, 45.10%, 1.0), rgba(46.27%, 46.67%, 45.10%, 0.3) 80%);"></div>
+</div>
+
+    <div class="banner-content">
+      <a href="#"><div class="smart-avatar avatar" style="width:72px; height:72px; font-size:32px;"><span class="overlap top avatar-holder" style="width:72px; height:72px; background-image:url(files/prof_icon.png" data-action="showUserCard" data-user-id="152301" alt="Anthony Thomas"></span></div></a>
+      <h2 class="banner-title"> My blog</h2>
+      <!--h3 class="banner-description"> CEO at jobs Portal  </h3-->
+    </div>
+    <!--div class="banner-indicator">
+      <a  class="oval-btn small warning" href="">Ask a question</a>
+    </div>
+    <div class="btn-holder">
+      <a class=" e-arrow-not-auth vote-btn tile-btn"  data-remote="true" rel="nofollow" data-method="post" href="#"><div class="inner-first"><span class="icon icon-triangle-top"></span> 38</div><div class="inner-second"><div class="overlay"></div><span class="icon icon-tick"></span> 38</div></a>
+
+      <a href="#" class="vote-btn tile-btn">
+        <div class="inner-first">
+          <span class="icon icon-alternative-comments"></span>
+          6
+        </div>
+      </a>
+    </div-->
+  </div>
+</div>
+
+    
+    <noscript>
+  
+</noscript>    
+<div class="main-header-wrapper">
+    <div class="controls-main-header">
+      <div class="dropdown dropdown-tags ">
+    <a id="choose-tag" class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+      All Tags
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="choose-tag">
+          <li>
+            <a href="#">analytics</a>
+          </li>
+          <li>
+            <a  href="#">api</a>
+          </li>
+          <li>
+            <a  href="#">b2b</a>
+          </li>
+          <li>
+            <a  href="#">blogging</a>
+          </li>
+          <li>
+            <a  href="#">casestudy</a>
+          </li>
+          <li>
+            <a  href="#">chrome</a>
+          </li>
+         
+    </ul>
+</div>
+
+      <!--div class="dropdown dropdown-post-filter" id="expand-menu">
+  <a id="post-filter" class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+    All Posts
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="choose-tag">
+    <li>
+      <a title="Filter posts by type: All"  href="#">All Posts</a>
+    </li>
+    <li>
+      <a title="Filter posts by type: Articles"  href="#">Articles</a>
+    </li>
+    <li>
+      <a title="Filter posts by type: Questions"  href="#">Questions</a>
+    </li>
+    <li>
+      <a title="Filter posts by type: Videos"  href="#">Videos</a>
+    </li>
+    <li>
+      <a title="Filter posts by type: Slides"  href="#">Slides</a>
+    </li>
+  </ul>
+</div-->
+    </div>
+<!--span class="bookmarklet"><span class="glyphicon glyphicon-bookmark"></span> Get the <a class="has-tooltip" onclick="return false;" data-toggle="tooltip" data-placement="bottom" data-title="Drag this link to your bookmark bar. Click the bookmark when you want to submit an article." href="#">GH Bookmarklet</a></span-->
+<h1 class="main-header " id=""> Blog Posts</h1></div>
+
+    
+    
+    
+<div class="posts-lists bettertabs" id="posts" >
+<!--div class="panel-nav">
+<div class="posts-nav-wrapper">
+
+<ul class="posts-nav tabs">
+
+<li class="tab" id="latest_posts_tab"><a class="" href="#">Latest</a></li>
+
+<li class="tab active" id="trending_posts_tab">
+<a  class="active" href="#">Trending</a></li>
+<li class="tab" id="must_read_posts_tab">
+<a  class="" href="#">Must Read</a></li>
+</ul>
+</div>
+</div-->
+<div id="latest_posts_content" class="content content-narrow content-posts questions hidden"></div>
+<div id="trending_posts_content" class="content content-narrow content-posts questions active">
+
+    <div class="posts">
+     
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+
+<div class="post status-active ignore-green" >
+ 
+  <div class="avatar-wrapper hidden-xs">
+    <a class="image-icon" href="#">
+	<div class="smart-avatar avatar" style="width:30px; height:30px; font-size:13px;">
+	<span class="overlap top avatar-holder" style="width:30px; height:30px; background-image:url(files/prof_icon.png);" ></span></div></a>
+  </div>
+  
+  <div class="post-content">
+    <h3><a class=""  href="#">Lorem Ipsum Simply Dummy Text</a></h3>
+    <span class="time-ago"><span class="source-domain-link">
+      <a target="_blank" class="trending-source-domain-link">BY : Deny</a> | </span>on 12-06-2015 &nbsp; <a>Comments(12)</a></span>
+    <p>  </p>
+  </div>
+</div>
+
+<p class="more-items"><a rel="next" class="oval-hollow-btn small" href="#/page/2">More Posts</a></p>
+</div>
+
+
+<div id="must_read_posts_content" class="content content-narrow content-posts questions hidden"></div></div>
+
+
+  </div>
+
+  
+  <div class="modal fade overlay-newpost"  >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="modal-header">
+          <h1>Add New Post</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body-content">
+          <div class="tabs-holder" id="new_post_tabs">
+            <ul class="nav nav-tabs nav-tabs-overlay-newpost" role="tablist">
+              <li class="active">
+                <a href="#article-tab" aria-controls="home" role="tab" data-toggle="tab">Submit an Article</a></li>
+              <li><a href="#question-tab" aria-controls="profile" role="tab" data-toggle="tab">Ask a Question</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="article-tab">
+                <form id="new_article_post_form" class="simple_form add-new-post" novalidate="novalidate" action="/article-posts" accept-charset="UTF-8" data-remote="true" method="post">
+                    <div class="form-group">
+                      <div class="input string required article_post_title"><label class="string required" for="new_article_post_title">TITLE</label><input id="new_article_post_title" class="string required form-control" placeholder="Add a short title" name="article_post[title]" type="text"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="input text optional article_post_summary"><label class="text optional" for="new_article_post_summary">SUMMARY</label><textarea id="new_article_post_summary" class="text optional form-control" rows="3" placeholder="Add a summary of the post here..." name="article_post[summary]"></textarea></div>
+                    </div>
+
+                    <div class="form-group">
+                      
+                    </div>
+                    
+                    <div class="form-group">
+                      <div class="input url required article_post_link"><label class="url required" for="new_article_post_link">URL</label><input id="new_article_post_link" class="string url required form-control check-embed" placeholder="http://doaminname.com" name="article_post[link]" type="url"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>TAGS</label>
+<div id="article_post_tag_ids_cont">
+  <select style="display: none;" tabindex="-1" name="tag_ids[]" id="article_post_tag_ids" placeholder="Add some tags" class="selectize-select selectized" multiple="multiple"></select><div class="selectize-control selectize-select multi plugin-remove_button plugin-dropdown_under_input"><div class="selectize-input items not-full has-options"><input style="width: 186px;" placeholder="Add some tags" tabindex="" autocomplete="off" type="text"></div><div style="display: none;" class="selectize-dropdown multi selectize-select plugin-remove_button plugin-dropdown_under_input"><div class="selectize-dropdown-content"></div></div></div>
+
+</div>
+                    </div>
+                    <div class="btn-holder btn-holder-new-post">
+                      <input name="commit" value="Submit" class="oval-btn width-medium" type="submit">
+                    </div>
+</form>              </div>
+
+              <!-- Tab panes -->
+              <div role="tabpanel" class="tab-pane" id="question-tab">
+
+                <form id="new_question_post_form" class="simple_form add-new-post" novalidate="novalidate" action="/question-posts" accept-charset="UTF-8" data-remote="true" method="post">
+                    <div class="form-group">
+                      <div class="input text required question_post_title"><label class="text required" for="new_question_post_title">QUESTION</label><textarea style="text-indent: 106px;" id="new_question_post_title" class="text required form-control" data-placehold="Ask GH:" name="question_post[title]"></textarea><span class="placehold">Ask GH:</span></div>
+                    </div>
+                    <div class="form-group">
+                      <label>TAGS</label>
+<div id="question_post_tag_ids_cont">
+  <select style="display: none;" tabindex="-1" name="tag_ids[]" id="question_post_tag_ids" placeholder="Add some tags" class="selectize-select selectized" multiple="multiple"></select><div class="selectize-control selectize-select multi plugin-remove_button plugin-dropdown_under_input"><div class="selectize-input items not-full has-options"><input style="width: 186px;" placeholder="Add some tags" tabindex="" autocomplete="off" type="text"></div><div style="display: none;" class="selectize-dropdown multi selectize-select plugin-remove_button plugin-dropdown_under_input"><div class="selectize-dropdown-content"></div></div></div>
+
+</div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input text optional question_post_body"><label class="text optional" for="new_question_post_body">Question Details <span>(optional)</span></label><textarea id="new_question_post_body" class="text optional form-control" placeholder="Please keep your question concise and add any additional details here." name="question_post[body]"></textarea></div>
+                    </div>
+                    <div class="form-group">
+                      
+                    </div>
+
+                    <div class="checkbox">
+                      <input name="question_post[anonym]" value="0" type="hidden"><input label="Ask anonymously" class="checkbox-real" value="1" name="question_post[anonym]" id="question_post_anonym" type="checkbox">
+                      <label for="question_post_anonym" class="checkbox-faux">
+                        <span class="icon icon-tick"></span>
+                      </label>
+                      <div class="checkbox-label-wrap">
+                        <label class="checkbox-label" for="checkbox10">
+                          ask anonymously
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="btn-holder btn-holder-new-post">
+                      <input name="commit" value="Submit" class="oval-btn width-medium" type="submit">
+                    </div>
+</form>              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Feedback modal-->
+<script type="text/javascript">
+    $('body').on('click', '#feedback_submit', function () {
+        feedback_body = $('#feedback_body').val();
+        $.post('/feedback', {
+            feedback: {
+                email: '',
+                product: 'network',
+                feedback: feedback_body,
+                meta_json: {
+                    user_agent: navigator.userAgent,
+                    user_id: 0,
+                    page_url: window.location.href
+                }
+            }
+        })
+                .fail(function() {
+                    flashMessages('alert', "We're sorry, but something went wrong. ");
+                })
+                .done(function (data) {
+                    if (data.success) {
+                        $('#feedback .modal-body').addClass('dis-none');
+                        $('#feedback .modal-confirm').removeClass('dis-none')
+                    } else {
+                        if (data.messages.length > 0) {
+                            flashMessages('alert', data.messages)
+                        }
+                    }
+                })
+    });
+</script>
+<div id="feedback" class="fade modal feedback-modal" tabindex="-1" role="dialog">
+  <div class="fancy-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close-btn" data-dismiss="modal">
+          <span class="icon icon-cross"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-intro">
+          <h3 class="modal-title">Have some feedback?</h3>
+
+          <p>Use the feedback box below if you have a question, comment or general feedback.</p>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="feedback_body" name="" placeholder="Leave your feedback here..."></textarea>
+        </div>
+        <div class="btn-holder btn-holder-center">
+          <a data-dismiss="modal" class="oval-hollow-btn thin" href="">Cancel</a>
+          <button class="oval-btn success" id="feedback_submit">Submit</button>
+        </div>
+      </div>
+      <div class="modal-body modal-confirm dis-none">
+                      <span class="circle">
+                        <span class="icon icon-tick"></span>
+                    </span>
+
+        <h2 class="modal-title">Thank You!</h2>
+
+        <p>Your feedback has been sent.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="login_modal">
+  <div class="sign-up-wrapper"><div id="signup-modal" class="fade modal" tabindex="-1" role="dialog">
+  <div class="fancy-dialog login-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close-btn" data-dismiss="modal">
+          <span class="icon icon-cross"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title">
+          Woah there...
+                        <span class="modal-subtitle">
+                            You’ve gotta be signed up first to do that!
+                        </span>
+        </h2>
+        <a class="twitter-btn rounded-btn" href="#"><span class="circle"><span class="icon icon-twitter"></span></span>Sign up with Twitter</a>
+        <div class="delimiter">
+          <div class="line"></div>
+          <span>or</span>
+        </div>
+        <form id="sign_up_user"  class="simple_form new_user" action="#" accept-charset="UTF-8" data-remote="true" method="post">
+            <div class="form-group">
+              <div class="input string required user_username"><input class="string required form-control" placeholder="Username" name="user[username]" id="sign_up_user_username" type="text"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="input string required user_first_name"><input class="string required form-control" placeholder="First name" name="user[first_name]" id="sign_up_user_first_name" type="text"></div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="input string required user_last_name"><input class="string required form-control" placeholder="Last name" name="user[last_name]" id="sign_up_user_last_name" type="text"></div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input email required user_email"><input class="string email required form-control" autofocus="autofocus" placeholder="Email" name="user[email]" id="sign_up_user_email" type="email"></div>
+            </div>
+            <div class="form-group">
+              <div class="input password required user_password"><input class="password required form-control" placeholder="Password - minimum 6 characters" name="user[password]" id="sign_up_user_password" type="password"></div>
+            </div>
+            <p class="error-msg style='display: none'"></p>
+
+            <div class="links-holder">
+              <input name="commit" value="Sign up now" class="btn oval-btn pull-right" type="submit">
+              <a class="sign-in link" data-remote="true" href="#/users/sign_in?from_sign_up=true">Sign in now</a>
+            </div>
+</form>        
+        <div class="space-50"></div>
+        <div class="hint">
+          Creating an account means you’re okay with GrowthHackers's
+          <a href="#">Terms of Service</a>
+          and <a href="#">Privacy Policy</a>.
+          Questions? <a href="mailto:support@mysite.com">support@mysite.com</a>
+        </div>
+      </div>
+      <div class="modal-footer fancy-bg"></div>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="sign-in-wrapper"><div id="login-modal" class="fade modal" tabindex="-1" role="dialog">
+  <div class="fancy-dialog login-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close-btn" data-dismiss="modal">
+          <span class="icon icon-cross"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="modal-title">
+          Woah there...
+                        <span class="modal-subtitle">
+                            You’ve gotta be logged in first to do that!
+                        </span>
+        </h2>
+        <a class="twitter-btn rounded-btn popup" data-width="600" data-height="600" href="#/users/sign_up_with_twitter?popup=true&amp;provider=twitter&amp;resource_name=user"><span class="circle"><span class="icon icon-twitter"></span></span>Log in with Twitter</a>
+        <div class="delimiter">
+          <div class="line"></div>
+          <span>or</span>
+        </div>
+        <form id="sign_in_user" data-type="json" novalidate="novalidate" class="simple_form new_user" action="#" accept-charset="UTF-8" data-remote="true" method="post">
+            <div class="form-group">
+              <div class="input email required user_email"><input class="string email required form-control" autofocus="autofocus" placeholder="Email" name="user[email]" id="sign_in_user_email" type="email"></div>
+            </div>
+            <div class="form-group">
+              <div class="input password required user_password"><input class="password required form-control" placeholder="Password" name="user[password]" id="sign_in_user_password" type="password"></div>
+            </div>
+            <input name="pending_action" id="pending_action" type="hidden">
+            <p class="error-msg style='display: none'"></p>
+
+            <div class="links-holder">
+              <button name="button" type="submit" class="oval-btn pull-right" onclick="startSpinner();">Log in</button>
+              
+
+    <a title="Lost Password" class="link" href="#/lostpassword">Forgot your password?</a> <br>
+
+
+
+              <a class="sign-up link" data-remote="true" href="#">Sign up now</a>
+            </div>
+</form>      </div>
+      <div class="modal-footer fancy-bg"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="subscribe-modal">
+  <div class="modal fade in subscription-modal" id="subscription-modal" role="dialog">
+  <div class="fancy-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>You’re one step away from the full GrowthHackers experience</h2>
+        <div class="modal-body-content">
+          <ul class="list-unstyled">
+            <li>Follow specific topics like viral marketing, growth hacks and early traction</li>
+            <li>Discuss emerging growth opportunities with top growth hackers like Sean Ellis and Morgan Brown</li>
+            <li>Share and upvote content in the web’s premiere growth hacking community</li>
+          </ul>
+
+          <div class="btn-holder btn-holder-center">
+            <a id="complete-account-btn" class="oval-btn success" href="#">Yes create my free account</a>
+
+            <input id="modal-email-subscribe" value="" type="hidden">
+            <a href="#" id="subscribe-no-thanks-btn"  class="oval-hollow-btn thin">No
+              thanks, I just want the email</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div class="modal fade in modal-form" id="emailMemberModal" tabindex="-1" role="dialog" aria-labelledby="emailMemberModalLabel" aria-hidden="true">
+  <div class="fancy-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Email member</h2>
+        <div class="modal-body-content">
+          <form id="js_send_member_email" novalidate="novalidate" class="simple_form email_member" action="#" accept-charset="UTF-8" data-remote="true" method="post">
+            <div class="form-group">
+              <input class="string optional disabled form-control" disabled="disabled" id="to-user-email" name="email_member[to]" type="text">
+            </div>
+
+            <input class="hidden form-control" value="" id="post-author-id" name="email_member[author_id]" type="hidden">
+
+            <div class="form-group">
+              <input class="string optional form-control" placeholder="Subject" name="email_member[subject]" id="email_member_subject" type="text">
+            </div>
+
+            <div class="form-group">
+              <textarea class="text optional form-control" placeholder="Body" name="email_member[body]" id="email_member_body"></textarea>
+            </div>
+
+            <div class="btn-holder btn-holder-center">
+              <button type="button" class="oval-hollow-btn thin" data-dismiss="modal">Close</button>
+              <button type="button" class="oval-btn success" onclick="$('#js_send_member_email').submit(); return false;">Send Email</button>
+            </div>
+</form>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade in modal-form" id="prepareTweetModal" tabindex="-1" role="dialog" aria-labelledby="prepareTweetModalLabel" aria-hidden="true">
+  <div class="fancy-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>Prepare Tweet</h2>
+        <div class="modal-body-content">
+          <form id="js_submit_tweet" novalidate="novalidate" class="simple_form prepare_tweet" action="#" accept-charset="UTF-8" data-remote="true" method="post">
+          
+              <div class="form-group">
+                <textarea class="text optional form-control" placeholder="Tweet text" maxlength="98" name="prepare_tweet[tweet_text]" id="prepare_tweet_tweet_text"></textarea>
+                <span class="character-count">
+                  <span class="current" id="tweetTextLength">0</span>/
+                  <span class="total">98</span>
+                </span>
+              </div>
+              <div class="btn-holder btn-holder-center">
+                <button type="button" class="oval-hollow-btn thin" data-dismiss="modal">Close</button>
+                <button type="button" class="oval-btn success" onclick="$('#js_submit_tweet').submit(); return false;">Save</button>
+              </div>
+</form>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="updated_profile_modal" data-renew="updated_profile_modal" data-renew-target="#updated_profile_modal">
+  
+</div>
+
+<div class="modal fade overlay-video" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video" style="display: none;">
+  <div id="video-dialog" class="modal-dialog" role="document">
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="share-modal" class="fade modal" tabindex="-1" role="dialog">
+</div>
+
+<!-- Subscription modal -->
+<div class="modal fade in subscription-modal" id="subscription-modal" role="dialog">
+  <div class="fancy-dialog modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h2>You’re one step away from the full GrowthHackers experience</h2>
+        <div class="modal-body-content">
+          <ul class="list-unstyled">
+            <li>Follow specific topics like viral marketing, growth hacks and early traction </li>
+            <li>Discuss emerging growth opportunities with top growth hackers like Sean Ellis and Morgan Brown</li>
+            <li>Share and vote content in the web’s premiere growth hacking community</li>
+          </ul>
+          <div class="btn-holder btn-holder-center">
+            <a class="oval-btn success" href="#">
+              Yes, create my free account
+            </a>
+            <a data-dismiss="modal" class="oval-hollow-btn thin" href="#">
+              No thanks, I just want the email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+     
+</div>
+</body></html>
